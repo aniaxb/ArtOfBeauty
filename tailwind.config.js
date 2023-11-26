@@ -9,6 +9,7 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
+        darkgreen: '#2A543B',
         caribbean: '#2C6463'
       }
     },

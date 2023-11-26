@@ -30,23 +30,23 @@ body {
 
 a {
   font-weight: 500;
-  color: #2C6463;
+  color: #2A543B;
   text-decoration: inherit;
 }
 
 #navbarList a {
-  color: #1F4746;
+  color: #2A543B;
   border-bottom: 1px solid white;
 }
 
 #navbarList a:hover {
-  color: #1F4746;
-  border-bottom: 1px solid #1F4746;
+  color: #2A543B;
+  border-bottom: 1px solid #2A543B;
 }
 
 #navbarList .active {
-  color: #1F4746;
-  border-bottom: 1px solid #1F4746;
+  color: #2A543B;
+  border-bottom: 1px solid #2A543B;
 }
 
 body {
@@ -74,7 +74,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #2C6463;
+  border-color: #2A543B;
 }
 button:focus,
 button:focus-visible {
@@ -87,7 +87,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #2C6463;
+    color: #2A543B;
   }
   button {
     background-color: #f9f9f9;
