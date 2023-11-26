@@ -20,15 +20,15 @@ const currentYear = new Date().getFullYear();
 export function Footer() {
   return (
     <footer className="relative w-full">
-      <div className="mx-auto w-full px-8 bg-caribbean">
+      <div className="mx-auto w-full px-8 bg-darkgreen">
         <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2">
-          <div className="flex lg:flex-row flex-col justify-center items-center gap-12">
-            <img src="/src/assets/logo.png" className="h-48" alt="KSisters logo"/>
+          <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-12">
+            <img src="/src/assets/ArtofBeauty_2.png" className="h-48" alt="KSisters logo"/>
             <div className="lg:w-1/2">
               <div className="flex flex-col justify-center items-center gap-4">
                 <Typography className="font-bold text-3xl text-white">Newsletter</Typography>
                 <div className="flex flex-row w-full gap-4">
-                  <Input label="E-mail" placeholder="example@email.com" crossOrigin={undefined}/>
+                  <Input label="E-mail" crossOrigin={undefined}/>
                   <Button className="bg-blue-gray-900 opacity-80 normal-case">Subscribe</Button>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export function Footer() {
             variant="paragraph"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
           >
-                        &copy; {currentYear} <a href="/" className="text-blue-gray-900">KSisters</a>. All
+                        &copy; {currentYear} <a href="/" className="text-blue-gray-900 hover:text-white">Art of Beauty</a>. All
                         Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

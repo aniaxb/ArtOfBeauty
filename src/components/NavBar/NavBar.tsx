@@ -56,13 +56,13 @@ export function NavBar() {
     // <div className="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
     <>
       <div className="w-full">
-        <img src="/src/assets/logo.png" alt="KSisters Logo Navbar" className="top-5 left-5 absolute z-20 w-48 hidden lg:block"/>
+        <img src="/src/assets/ArtofBeauty_2.png" alt="Navbar ArtBeauty Logo" className="top-5 left-5 absolute z-20 w-60 hidden lg:block"/>
         <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
           <div className="flex items-center justify-between text-blue-gray-900">
             <Typography
               className="mr-4 cursor-pointer py-1.5 font-medium text-white hidden lg:block"
             >
-                          KSisters
+                          ArtBeauty
             </Typography>
             <div className="flex items-center">
               <div className="ml-20 hidden lg:block">{navList}</div>
@@ -77,7 +77,7 @@ export function NavBar() {
               </Button>
               <Button
                 size="md"
-                className="hidden lg:inline-block bg-caribbean"
+                className="hidden lg:inline-block bg-darkgreen"
               >
                 <span>Sign in</span>
               </Button>
@@ -121,12 +121,15 @@ export function NavBar() {
             </IconButton>
           </div>
           <Collapse open={openNav}>
+            <div className="flex justify-center ">
+              <img src="/src/assets/ArtofBeauty_2.png" alt="Navbar ArtBeauty Logo" className="w-40 lg:block"/>
+            </div>
             {navList}
             <div className="flex items-center gap-x-1">
               <Button fullWidth variant="text" size="sm" className="">
                 <span>Log In</span>
               </Button>
-              <Button fullWidth variant="gradient" size="sm" className="">
+              <Button fullWidth  size="sm" className="bg-darkgreen">
                 <span>Sign in</span>
               </Button>
             </div>
