@@ -28,7 +28,7 @@ export function Footer() {
               <div className="flex flex-col justify-center items-center gap-4">
                 <Typography className="font-bold text-3xl text-white">Newsletter</Typography>
                 <div className="flex flex-row w-full gap-4">
-                  <Input label="E-mail" crossOrigin={undefined}/>
+                  <Input label="E-mail Address" crossOrigin={undefined}/>
                   <Button className="bg-blue-gray-900 opacity-80 normal-case">Subscribe</Button>
                 </div>
               </div>
