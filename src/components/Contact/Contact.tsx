@@ -1,6 +1,6 @@
 import {NavBar} from '../NavBar/NavBar.tsx';
 import {Card, CardBody, Typography} from '@material-tailwind/react';
-import Map from './GoogleMap/Map.tsx';
+import Map from './Map/Map.tsx';
 import 'leaflet/dist/leaflet.css';
 import {FaEnvelope, FaLocationArrow, FaPhoneAlt} from 'react-icons/fa';
 import {Footer} from '../Footer/Footer.tsx';
@@ -20,7 +20,8 @@ function Contact() {
                 </Typography>
                 <Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
                   <FaEnvelope /> example@mail.com
-                </Typography><Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
+                </Typography>
+                <Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
                   <FaLocationArrow /> Southwark Street 1
                 </Typography>
               </div>

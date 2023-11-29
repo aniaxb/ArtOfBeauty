@@ -1,13 +1,13 @@
-import { useParams } from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import {servicesList} from '../servicesList.tsx';
 import {NavBar} from '../../NavBar/NavBar.tsx';
 import {Footer} from '../../Footer/Footer.tsx';
 import {Button, Card, CardBody, CardFooter, Typography} from '@material-tailwind/react';
 
 const ServicePage = () => {
+  const navigate = useNavigate();
   const { serviceName } = useParams();
 
-  // Find the service data based on the serviceName
   const service = servicesList.find((s) => s.urlName === serviceName);
 
   if (!service) {
@@ -15,6 +15,10 @@ const ServicePage = () => {
   }
 
   const { name, description, duration, pricing, imageUrl } = service;
+
+  const handleReserveService = () => {
+    navigate(`/reservation/${serviceName}`);
+  };
 
   return (
     <>
@@ -34,9 +38,9 @@ const ServicePage = () => {
               </CardBody>
               <CardFooter>
                 { name === 'Voucher' ? (
-                  <Button className="w-1/3 bg-blue-gray-900">Purchase</Button>
+                  <Button className="w-1/3 bg-blue-gray-900" onClick={handleReserveService}>Purchase</Button>
                 ) : (
-                  <Button className="w-1/3 bg-blue-gray-900">Make a reservation</Button>
+                  <Button className="w-1/3 bg-blue-gray-900" onClick={handleReserveService}>Make a reservation</Button>
                 )}
               </CardFooter>
             </Card>

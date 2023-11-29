@@ -6,7 +6,7 @@ import {
   IconButton,
   Collapse,
 } from '@material-tailwind/react';
-import {NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 export function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -68,19 +68,23 @@ export function NavBar() {
               <div className="ml-20 hidden lg:block">{navList}</div>
             </div>
             <div className="flex items-center gap-x-1">
-              <Button
-                variant="outlined"
-                size="md"
-                className="hidden lg:inline-block"
-              >
-                <span>Log In</span>
-              </Button>
-              <Button
-                size="md"
-                className="hidden lg:inline-block bg-darkgreen"
-              >
-                <span>Sign in</span>
-              </Button>
+              <Link to={'/login'}>
+                <Button
+                  variant="outlined"
+                  size="md"
+                  className="hidden lg:inline-block"
+                >
+                  <span>Log In</span>
+                </Button>
+              </Link>
+              <Link to={'/register'}>
+                <Button
+                  size="md"
+                  className="hidden lg:inline-block bg-darkgreen"
+                >
+                  <span>Sign Up</span>
+                </Button>
+              </Link>
             </div>
             <IconButton
               variant="text"
@@ -125,13 +129,17 @@ export function NavBar() {
               <img src="/src/assets/ArtofBeauty_2.png" alt="Navbar ArtBeauty Logo" className="w-40 lg:block"/>
             </div>
             {navList}
-            <div className="flex items-center gap-x-1">
-              <Button fullWidth variant="text" size="sm" className="">
-                <span>Log In</span>
-              </Button>
-              <Button fullWidth  size="sm" className="bg-darkgreen">
-                <span>Sign in</span>
-              </Button>
+            <div className="flex items-center justify-center gap-x-1">
+              <Link to={'/login'}>
+                <Button fullWidth variant="outlined" size="sm" className="">
+                  <span>Log In</span>
+                </Button>
+              </Link>
+              <Link to={'/register'}>
+                <Button fullWidth  size="sm" className="bg-darkgreen">
+                  <span>Sign Up</span>
+                </Button>
+              </Link>
             </div>
           </Collapse>
         </Navbar>
