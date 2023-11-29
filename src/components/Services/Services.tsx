@@ -11,7 +11,7 @@ function Services() {
     <>
       <div className="min-h-screen flex flex-col">
         <NavBar />
-        <div className="flex-1 flex flex-col justify-center items-center w-screen ">
+        <div className="flex-1 flex flex-col justify-center items-center w-screen my-12 lg:my-0">
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="w-80">
               <Input label="Search" icon={<FaSearch />} crossOrigin={undefined} onChange={()=> console.log('searched')}/>
