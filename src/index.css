@@ -106,3 +106,8 @@ button:focus-visible {
     background-color: #121212;
   }
 }
+
+.discount-bg {
+  padding-block: 4em;
+  background-image: url("https://as1.ftcdn.net/jpg/06/45/46/08/480_F_645460801_iwmx79mycsLDKrxO857PcBObI2DopoLp.jpg?token=1703277963_fwDXCUYwVRbiTXFSMKiVAGjUaZ-pe66hqdXB0by9drk");
+}
