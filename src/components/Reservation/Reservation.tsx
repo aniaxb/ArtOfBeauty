@@ -5,11 +5,12 @@ import {NavBar} from '../NavBar/NavBar.tsx';
 import {Button, Card, CardBody, CardHeader, Input, Typography} from '@material-tailwind/react';
 import {FaCalendarAlt, FaCreditCard, FaLock} from 'react-icons/fa';
 import {FaMoneyBill1Wave} from 'react-icons/fa6';
+import { MdDiscount } from 'react-icons/md';
 
 const SummaryPage = () => {
   const { serviceName } = useParams();
   const [service, setService] = useState<Service | null>(null);
-  const [selectedMethod, setSelectedMethod] = useState('');
+  const [selectedMethod, setSelectedMethod] = useState('cash');
 
   useEffect(() => {
     const selectedService = servicesList.find((s) => s.urlName === serviceName);
@@ -37,7 +38,7 @@ const SummaryPage = () => {
         <NavBar />
         <div className="flex-1 flex justify-evenly items-center w-screen">
           <div className="text-start flex flex-col w-3/4">
-            <Card className="p-6">
+            <Card className="p-6 mt-12">
               <CardHeader>
                 <Typography variant="h2" className="text-center text-darkgreen p-2">Summary</Typography>
               </CardHeader>
@@ -45,14 +46,14 @@ const SummaryPage = () => {
                 <div className="flex flex-col lg:flex-row gap-12 justify-between items-center">
                   <div className="w-full lg:w-1/2 flex flex-col gap-6">
                     <Typography variant="h2" className="text-darkgreen">{name}</Typography>
-                    <Typography variant="h6">{description}</Typography>
-                    <Typography variant="h6">Duration: {duration}</Typography>
-                    <Typography variant="h6">Pricing: {pricing}</Typography>
+                    <Typography variant="h6">Description: </Typography><Typography className="w-full lg:w-2/3">{description}</Typography>
+                    <Typography className="font-bold">Duration: <span className="font-normal">{duration}</span></Typography>
+                    <Typography className="font-bold">Pricing: <span className="font-normal">{pricing}</span></Typography>
                     <div className="w-full lg:w-2/3">
                       <hr/>
                     </div>
                     <Typography variant="h5">Payment Method</Typography>
-                    <div className="flex flex-col lg:flex-row gap-12 justify-evenly w-full lg:w-2/3">
+                    <div className="flex flex-col xl:flex-row gap-4  justify-between w-full lg:w-2/3">
                       <div
                         className={`border-2 rounded-lg py-2 px-6 flex gap-4 justify-center items-center ${
                           selectedMethod === 'cash' ? 'border-darkgreen border-opacity-50' : 'focus:border-darkgreen'
@@ -87,9 +88,13 @@ const SummaryPage = () => {
                         <div className="w-full mb-4">
                           <Input label="Credit Card Number" icon={<FaCreditCard />} crossOrigin={undefined} />
                         </div>
-                        <div className="flex flex-row gap-4">
-                          <Input label="Date" icon={<FaCalendarAlt />} crossOrigin={undefined} />
-                          <Input label="CCV" icon={<FaLock />} crossOrigin={undefined} />
+                        <div className="flex flex-col xl:flex-row gap-4">
+                          <div>
+                            <Input label="Date" icon={<FaCalendarAlt />} crossOrigin={undefined} />
+                          </div>
+                          <div>
+                            <Input label="CCV" icon={<FaLock />} crossOrigin={undefined} />
+                          </div>
                         </div>
                       </div>) : selectedMethod === 'blik' ?
                       (<div>
@@ -100,6 +105,10 @@ const SummaryPage = () => {
                         </div>
                       </div>) : (<Typography variant="h6">Payment at the salon</Typography>)
                     }
+                    <div className="flex flex-col gap-2 w-full lg:w-2/3 mb-4">
+                      <Typography variant="h6">Discount</Typography>
+                      <Input label="Discount code" icon={<MdDiscount />} crossOrigin={undefined} />
+                    </div>
                     { name === 'Voucher' ? (
                       <Button className="w-full lg:w-2/3 bg-blue-gray-900" >Purchase</Button>
                     ) : (
@@ -107,7 +116,7 @@ const SummaryPage = () => {
                     )}
                   </div>
                   <div>
-                    <img src={imageUrl} alt={name} className="rounded-xl w-[32vw]"/>
+                    <img src={imageUrl} alt={name} className="rounded-xl w-full lg:w-[32vw]"/>
                   </div>
                 </div>
               </CardBody>

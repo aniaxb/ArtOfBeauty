@@ -19,7 +19,7 @@ function Contact() {
                   <FaPhoneAlt /> +44 123123123
                 </Typography>
                 <Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
-                  <FaEnvelope /> example@mail.com
+                  <FaEnvelope /> artofbeauty@mail.com
                 </Typography>
                 <Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
                   <FaLocationArrow /> Southwark Street 1
@@ -30,9 +30,6 @@ function Contact() {
               </div>
             </div>
           </CardBody>
-          {/*<CardFooter className="pt-0">*/}
-          {/*  <Button className="bg-darkgreen">Read More</Button>*/}
-          {/*</CardFooter>*/}
         </Card>
       </div>
       <Footer/>

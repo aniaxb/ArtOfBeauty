@@ -3,15 +3,11 @@ import {Button, Input, Typography} from '@material-tailwind/react';
 const LINKS = [
   {
     title: 'Product',
-    items: ['Overview', 'Features', 'Solutions', 'Tutorials'],
+    items: ['Home', 'Popular', 'Services', 'About'],
   },
   {
     title: 'Company',
-    items: ['About us', 'Careers', 'Press', 'News'],
-  },
-  {
-    title: 'Resource',
-    items: ['Blog', 'Newsletter', 'Events', 'Help center'],
+    items: ['About us', 'Contact', 'Meet the Team', 'Video'],
   },
 ];
 
@@ -22,7 +18,7 @@ export function Footer() {
     <footer className="relative w-full">
       <div className="mx-auto w-full px-8 bg-darkgreen">
         <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2">
-          <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-12">
+          <div className="flex xl:flex-row flex-col justify-center items-center lg:gap-12">
             <img src="/src/assets/ArtofBeauty_2.png" className="h-48" alt="KSisters logo"/>
             <div className="lg:w-1/2">
               <div className="flex flex-col justify-center items-center gap-4">
@@ -34,13 +30,12 @@ export function Footer() {
               </div>
             </div>
           </div>
-
-          <div className="grid grid-cols-3 justify-between gap-4">
+          <div className="grid grid-cols-2 justify-between">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
-                  className="mb-3 pt-6 font-medium text-blue-gray-900 text-md"
+                  className="mb-3 pt-6 font-bold text-blue-gray-900 text-md"
                 >
                   {title}
                 </Typography>
@@ -86,7 +81,7 @@ export function Footer() {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="https://github.com/aniaxb/KSistersFrontend" className="opacity-80 transition-opacity hover:opacity-100 hover:text-blue-gray-900">
+            <Typography as="a" href="https://github.com/aniaxb/ArtOfBeauty" className="opacity-80 transition-opacity hover:opacity-100 hover:text-blue-gray-900">
               <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"

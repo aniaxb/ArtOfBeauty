@@ -18,10 +18,10 @@ function Services() {
             </div>
             <div className="w-80">
               <Select label="Category" className="bg-darkgreen text-white">
-                <Option>Makijaż dzienny</Option>
-                <Option>Makijaż wieczorowy</Option>
-                <Option>Manicure hybrydowy</Option>
-                <Option>Manicure hybrydowy ze zdjęciem hybrydy</Option>
+                <Option>Voucher</Option>
+                <Option>Day Make-up</Option>
+                <Option>Evening Make-up</Option>
+                <Option>Hybrid Manicure</Option>
               </Select>
             </div>
           </div>

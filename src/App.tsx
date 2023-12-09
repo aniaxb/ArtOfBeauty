@@ -6,6 +6,7 @@ import ServicePage from './components/Services/ServicePage/ServicePage.tsx';
 import Register from './components/Register/Register.tsx';
 import Login from './components/Login/Login.tsx';
 import Reservation from './components/Reservation/Reservation.tsx';
+import About from './components/About/About.tsx';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Route path={'/'} element={<Home/>}></Route>
       <Route path={'/services'} element={<Services/>}></Route>
       <Route path={'/contact'} element={<Contact/>}></Route>
+      <Route path={'/about'} element={<About/>}></Route>
       <Route path="/service/:serviceName" element={<ServicePage />}></Route>
       <Route path={'/register'} element={<Register/>}></Route>
       <Route path={'/login'} element={<Login/>}></Route>

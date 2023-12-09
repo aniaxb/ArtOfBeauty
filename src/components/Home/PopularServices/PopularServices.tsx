@@ -10,29 +10,38 @@ export default function PopularServices() {
           <div className="flex flex-col w-2/3 lg:w-1/4 gap-4 ">
             <img src="/src/assets/nails_photo.png" alt="Hybrid Manicure"/>
             <p className="text-darkgreen font-bold text-lg">Hybrid Manicure</p>
-            <p>Manicure hybrydowy wraz ze zdjęciem hybrydy, to trwały i piękny lakier z możliwością umieszczenia wzoru na paznokciach.</p>
+            <p>
+              Discover the beauty of our Hybrid Manicure, a lasting and stylish nail treatment that includes the option for captivating nail art designs.
+              Enjoy resilient and gorgeous nails with our expert touch.
+            </p>
             <div>
-              <Link to={'/services'}>
+              <Link to={'/service/hybrid-manicure'}>
                 <Button className="bg-darkgreen lg:w-1/3 rounded-full">Read more</Button>
               </Link>
             </div>
           </div>
           <div className="flex flex-col w-2/3 lg:w-1/4 gap-4">
-            <img src="/src/assets/nails_photo.png" alt="Evening MakeUp"/>
-            <p className="text-darkgreen font-bold text-lg">Evening MakeUp</p>
-            <p>Manicure hybrydowy wraz ze zdjęciem hybrydy, to trwały i piękny lakier z możliwością umieszczenia wzoru na paznokciach.</p>
+            <img src="/src/assets/evening_makeup.jpg" alt="Evening MakeUp"/>
+            <p className="text-darkgreen font-bold text-lg">Evening Make-Up</p>
+            <p>
+              Craft captivating looks that accentuate your features and complement your unique style.
+              Whether you're heading to a special event or a night out, let us transform your evening.
+            </p>
             <div>
-              <Link to={'/services'}>
+              <Link to={'/service/evening-makeup'}>
                 <Button className="bg-darkgreen lg:w-1/3 rounded-full">Read more</Button>
               </Link>
             </div>
           </div>
           <div className="flex flex-col w-2/3 lg:w-1/4 gap-4">
-            <img src="/src/assets/nails_photo.png" alt="Manicure Example"/>
-            <p className="text-darkgreen font-bold text-lg">Manicure hybrydowy ze zdjęciem hybrydy</p>
-            <p>Manicure hybrydowy wraz ze zdjęciem hybrydy, to trwały i piękny lakier z możliwością umieszczenia wzoru na paznokciach.</p>
+            <img src="/src/assets/day_makeup.jpg" alt="Day Make-up"/>
+            <p className="text-darkgreen font-bold text-lg">Day Make-up</p>
+            <p>
+              Day Makeup brings impeccable shine to your everyday look.
+              Embrace the beauty of a timeless Day Makeup, enhancing your natural glow with a touch of sophistication and grace.
+            </p>
             <div>
-              <Link to={'/services'}>
+              <Link to={'/service/day-makeup'}>
                 <Button className="bg-darkgreen lg:w-1/3 rounded-full">Read more</Button>
               </Link>
             </div>

@@ -32,9 +32,9 @@ const ServicePage = () => {
             <Card>
               <CardBody>
                 <Typography variant="h2" className="text-darkgreen py-4">{name}</Typography>
-                <Typography variant="h6">{description}</Typography>
-                <Typography variant="h6">Duration: {duration}</Typography>
-                <Typography variant="h6">Pricing: {pricing}</Typography>
+                <Typography variant="h6">Description: </Typography><Typography>{description}</Typography>
+                <Typography className="font-bold">Duration: <span className="font-normal">{duration}</span></Typography>
+                <Typography className="font-bold">Pricing: <span className="font-normal">{pricing}</span></Typography>
               </CardBody>
               <CardFooter>
                 { name === 'Voucher' ? (
