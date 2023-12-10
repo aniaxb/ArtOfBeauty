@@ -6,6 +6,7 @@ export const servicesList = [
     duration: 'Valid for 1 year since purchase',
     pricing: '$100',
     imageUrl: '/src/assets/voucher.jpg',
+    rating: 5.00
   },
   {
     name: 'Hybrid Manicure',
@@ -14,6 +15,7 @@ export const servicesList = [
     duration: '1 hour',
     pricing: '$45',
     imageUrl: '/src/assets/nails_photo.png',
+    rating: 3.00
   },
   {
     name: 'Evening Makeup',
@@ -22,6 +24,7 @@ export const servicesList = [
     duration: '2 hours',
     pricing: '$80',
     imageUrl: '/src/assets/evening_makeup.jpg',
+    rating: 4.00
   },
   {
     name: 'Day Makeup',
@@ -30,5 +33,6 @@ export const servicesList = [
     duration: '2 hours',
     pricing: '$60',
     imageUrl: 'https://as1.ftcdn.net/jpg/00/51/35/44/480_F_51354449_QPCiYY3FUnKrpjHDeFfOXj6PhMSFfe7w.jpg?token=1703283621_kJwCG-5BVZTZ9OxvDwx19MOxFJizc1_mp2CYLKa4EGk',
+    rating: 4.00
   },
 ];
