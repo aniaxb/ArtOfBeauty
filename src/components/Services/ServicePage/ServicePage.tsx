@@ -41,7 +41,7 @@ const ServicePage = () => {
               </CardBody>
               <CardFooter className="flex flex-col gap-6 pt-0">
                 { name === 'Voucher' ? (
-                  <Button className="w-full xl:w-1/3 bg-blue-gray-900" onClick={handleReserveService}>Purchase</Button>
+                  <Button className="w-full xl:w-2/3 bg-blue-gray-900" onClick={handleReserveService}>Purchase</Button>
                 ) : (
                   <Button className="w-full xl:w-2/3 bg-blue-gray-900" onClick={handleReserveService}>Make a reservation</Button>
                 )}

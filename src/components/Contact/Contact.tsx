@@ -24,6 +24,9 @@ function Contact() {
                 <Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
                   <FaLocationArrow /> Southwark Street 1
                 </Typography>
+                <Typography variant="h5" color="blue-gray" className="flex gap-4 text-white">
+                  <span className="font-bold">NIP</span> 1231231231
+                </Typography>
               </div>
               <div>
                 <Map/>
