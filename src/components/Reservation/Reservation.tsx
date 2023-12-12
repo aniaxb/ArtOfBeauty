@@ -88,11 +88,11 @@ const SummaryPage = () => {
                         <div className="w-full mb-4">
                           <Input label="Credit Card Number" icon={<FaCreditCard />} crossOrigin={undefined} />
                         </div>
-                        <div className="flex flex-col xl:flex-row gap-4">
-                          <div>
+                        <div className="flex flex-col xl:flex-row gap-4 w-full">
+                          <div className="w-1/2">
                             <Input label="Date" icon={<FaCalendarAlt />} crossOrigin={undefined} />
                           </div>
-                          <div>
+                          <div className="w-1/2">
                             <Input label="CCV" icon={<FaLock />} crossOrigin={undefined} />
                           </div>
                         </div>
